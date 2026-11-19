@@ -1,42 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toyota Customer Enquiry Form</title>
 </head>
+
 <body>
-     <nav>
-    <a href="index.html">home</a>
-    <a href="about.html">about</a>
-    <a href="service.html">service</a>
-    <a href="contact.html">contact</a>
-</nav>
+
+   
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+   
     <form>
+
         <center>
-        <h1> customer enquiry form</h1><br>
+            <h1>Customer Enquiry Form</h1>
         </center>
-        <label for="name" id="name"></label>
-        <input type="text"placeholder="enter your name="<br>
-        <label for="email:"></label><br>
-        <input type="email" placeholder="enter your email"><br>
-        <label for="phone number"></label>
-        <input type="tel" placeholder="enter your phone number"><br>
-        <label for="age:"></label>
-        <input type="number"><br>
-        <label for="gender:"></label>
-        <input type="radio" name="gender">female
-        <input type="radio" name="gender">male <br>
-        <label for="preferred toyota car:"></label>
-        <input type="text" placeholder=" toyota Model"><br>
-        <label for="test drive date:"></label>
-        <input type="date"><br>
-        <label for="upload driving license:"></label>
-        <input type="file"><br>
-        <label for=" comments:"></label>
-        <input type="text" placeholder="your comments"><br>
-        <input type="text submit" value="submit">
-        <input type="text" rest value="rest">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"
+            placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+            placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+            placeholder="Enter your phone number">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        
+        <label>Gender:</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <br><br>
+
+       
+        <label for="model">Preferred Toyota Car:</label>
+        <select id="model" name="model">
+            <option value="">Select Model</option>
+            <option value="corolla">Toyota Corolla</option>
+            <option value="camry">Toyota Camry</option>
+            <option value="fortuner">Toyota Fortuner</option>
+            <option value="innova">Toyota Innova</option>
+            <option value="hyryder">Toyota Hyryder</option>
+        </select>
+
+        <br><br>
+
+        
+        <label for="date">Test Drive Date:</label>
+        <input type="date" id="date" name="date">
+        <br><br>
+
+      
+        <label for="license">Upload Driving License:</label>
+        <input type="file" id="license" name="license">
+        <br><br>
+
+       
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"
+            placeholder="Your comments"></textarea>
+
+        <br><br>
+
+       
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
     </form>
+
 </body>
 </html>
